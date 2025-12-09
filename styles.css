@@ -1,20 +1,136 @@
-html {
-    background-color: rgb(255, 254, 246);
+@font-face {
+    font-family: "Overused Grotesk";
+    src: url("fonts/OverusedGrotesk-VF.woff2") format("woff2-variations");
+    font-weight: 300 900;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    margin: 0;
+    font-family: 'Overused Grotesk', Helvetica, Arial, sans-serif;
+    background-color: #FFF8E7;
 }
 
 img {
-    max-width: 90vw;
-    max-height: 90vh;
+    display: block;
+    margin: auto;
 }
 
-p {
-    color: #5a7ebc;
-    font-family: Helvetica, Arial, sans-serif;
+#content {
+    margin: auto;
+    max-width: 99ch;
+    color: #164238;
+}
+
+#content > div {
+    padding: 1rem;
+}
+
+#div-1 {
+    color: #FFFFFF;
+    background-color: #164238;
+}
+
+#div-1 img {
+    margin: 0 0 0 2rem;
+}
+
+#div-2 {
+    background-color: #FFFFFF;
+    position: relative;
+    min-height: 320px;
+}
+
+#div-2 img.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#div-2 img.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2rem 3rem;
+}
+
+#div-2 #heading-div {
+    position: absolute;
+    max-width: 50ch;
+    top: 40px;
+    right: 35px;
+}
+
+#div-2 #heading-div p {
+    margin-top: -1rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#div-3 {
+    background-color: #E2E479;
+}
+
+#div-4 {
+    background-color: #FFFFFF;
+}
+
+#div-5 {
+    background-color: #CCD3E3;
+}
+
+#div-6 {
+    background-color: #FFFFFF;
+}
+
+#div-7 {
+    background-color: #DEC1DD;
+}
+
+#div-8 {
+    background-color: #FFFFFF;
+}
+
+#div-9 {
+    background-color: #FFFFFF;
+}
+
+#div-10 {
+    color: #FFFFFF;
+    background-color: #164238;
+}
+
+#div-11.content-footer {
+    color: #FFFFFF;
+    background-color: #164238;
+    padding: 3rem;
+}
+
+.center-div {
+    margin: auto;
+    max-width: 70ch;
+    padding: 1rem 1.5rem;
+}
+
+.content-footer > p {
+    position: absolute;
+    font-weight: bold;
+}
+
+.content-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content-footer > img {
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 840px) {
+    #div-2,
+    #div-2 #heading-div,
+    #div-2 img.bottom-left,
+    #div-2 img.bottom-right {
+        position: inherit;
+    }
 }
