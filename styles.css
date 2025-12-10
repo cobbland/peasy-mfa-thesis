@@ -13,6 +13,7 @@ body {
 img {
     display: block;
     margin: auto;
+    max-width: 100%;
 }
 
 #content {
@@ -109,6 +110,97 @@ img {
     margin: auto;
     max-width: 70ch;
     padding: 1rem 1.5rem;
+}
+
+.images {
+    margin: 4rem auto;
+    max-width: 70ch;
+}
+
+.two-one {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.two-side {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+}
+
+.two-side > img:first-of-type {
+    padding-bottom: 1rem;
+}
+
+.two-one > img {
+    max-width: 67%;
+}
+
+.two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.two img {
+    max-width: 50%;
+}
+
+.two-wide {
+    max-width: 80ch;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.two-wide img {
+    margin: 0;
+}
+
+.two-wide img:nth-child(1) {
+    max-width: 20%;
+    border: solid 1px lightgrey;
+}
+
+.two-wide img:nth-child(2) {
+    max-width: 60%;
+}
+
+.three-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 2rem 4rem;
+    gap: 1rem;
+}
+
+.three-three img {
+    width: 100%;
+    aspect-ratio: 9 / 12;
+    object-fit: cover;
+    display: block;
+}
+
+.three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.three img {
+    max-width: 30%;
+}
+
+#div-9.full-bleed {
+    padding: 0;
 }
 
 .content-footer > p {
